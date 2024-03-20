@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Run index.ts",
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/tsx",
-      "args": ["${workspaceFolder}/index.ts"],
+      "args": ["${workspaceFolder}/src/index.ts"],
       "console": "integratedTerminal",
       "internalConsoleOptions": "openOnFirstSessionStart"
     },

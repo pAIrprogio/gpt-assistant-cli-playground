@@ -6,7 +6,7 @@ require("dotenv").config({
 const { execSync } = require("child_process");
 
 const tsxPath = path.join(__dirname, "./node_modules/.bin/tsx");
-const indexTsPath = path.join(__dirname, "./index.ts");
+const indexTsPath = path.join(__dirname, "./src/index.ts");
 try {
   execSync(`${tsxPath} ${indexTsPath}`, { stdio: "inherit" });
 } catch (e) {

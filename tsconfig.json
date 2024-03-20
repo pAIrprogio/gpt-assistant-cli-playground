@@ -8,6 +8,5 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "outDir": "dist"
-  },
-  "reflection": true
+  }
 }

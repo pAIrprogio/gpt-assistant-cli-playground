@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "systemPrompt": {
+    "instructions": {
       "type": "string",
       "description": "The assistant's system prompt."
     },
@@ -14,5 +14,5 @@
       "description": "An optional list of tool names as strings."
     }
   },
-  "required": ["systemPrompt"]
+  "required": ["instructions"]
 }

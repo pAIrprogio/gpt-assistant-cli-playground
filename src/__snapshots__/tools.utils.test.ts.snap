@@ -1,0 +1,70 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`toOpenAiTool > creates schema from a tool 1`] = `
+{
+  "function": {
+    "description": "List a directory's files",
+    "name": "ls",
+    "parameters": {
+      "additionalProperties": false,
+      "properties": {
+        "relativePath": {
+          "default": ".",
+          "description": "relative path to the directory",
+          "type": "string",
+        },
+      },
+      "type": "object",
+    },
+  },
+  "type": "function",
+}
+`;
+
+exports[`toOpenAiTools > creates schemas from tools 1`] = `
+[
+  {
+    "function": {
+      "description": "Reads a file",
+      "name": "readFile",
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "prefixWithLineNumbers": {
+            "description": "Prefix each line with its line number. Use it for git patches",
+            "type": "boolean",
+          },
+          "relativeFilePath": {
+            "description": "The path to the file relative to the project root",
+            "type": "string",
+          },
+        },
+        "required": [
+          "relativeFilePath",
+        ],
+        "type": "object",
+      },
+    },
+    "type": "function",
+  },
+  {
+    "function": {
+      "description": "Executes a command in a bash terminal",
+      "name": "executeCommand",
+      "parameters": {
+        "additionalProperties": false,
+        "properties": {
+          "command": {
+            "type": "string",
+          },
+        },
+        "required": [
+          "command",
+        ],
+        "type": "object",
+      },
+    },
+    "type": "function",
+  },
+]
+`;
